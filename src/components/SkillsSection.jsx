@@ -31,7 +31,7 @@ const SkillsSection = () => {
   const [showSidebar, setShowSidebar] = useState(false);
 
   return (
-    <section id="skills" className="bg-black py-10 overflow-hidden relative px-4">
+    <section id="skills" className="bg-black py-10 overflow-hidden relative px-4 max-w-7xl mx-auto">
       <button
         onClick={() => setShowSidebar(true)}
         className="absolute right-4 top-4 bg-purple-600 text-white px-4 py-2 rounded-full text-sm hover:bg-purple-700 transition"
@@ -44,21 +44,21 @@ const SkillsSection = () => {
           {skills.concat(skills).map((skill, index) => (
             <div
               key={index}
-              className="min-w-[140px] p-4 rounded-xl flex flex-col items-center justify-center hover:scale-105 transition-transform shadow-md"
+              className="min-w-[140px] lg:min-w-[160px] p-4 lg:p-6 rounded-xl flex flex-col items-center justify-center hover:scale-105 transition-transform shadow-md"
               style={{
                 backgroundColor: cardColors[index % cardColors.length],
                 color: "#1A1A1A",
               }}
             >
-              <img src={skill.icon} alt={skill.name} className="w-10 h-10 mb-2" />
-              <p className="text-sm font-semibold">{skill.name}</p>
+              <img src={skill.icon} alt={skill.name} className="w-10 h-10 lg:w-12 lg:h-12 mb-2" />
+              <p className="text-sm lg:text-base font-semibold">{skill.name}</p>
             </div>
           ))}
         </div>
       </div>
 
       <div
-        className={`fixed top-0 right-0 h-full w-[85%] sm:w-[360px] bg-black text-white shadow-lg transition-transform duration-300 z-50 ${
+        className={`fixed top-0 right-0 h-full w-[85%] sm:w-[360px] lg:w-[420px] bg-black text-white shadow-lg transition-transform duration-300 z-50 ${
           showSidebar ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -73,14 +73,14 @@ const SkillsSection = () => {
           </div>
 
           <div className="flex flex-col items-center mb-4">
-            <div className="w-20 h-20 rounded-full overflow-hidden border-2 border-purple-500 mb-1">
+            <div className="w-20 h-20 lg:w-24 lg:h-24 rounded-full overflow-hidden border-2 border-purple-500 mb-1">
               <img src={profile} alt="Shrishti" className="w-full h-full object-cover" />
             </div>
-            <h3 className="font-bold text-base">Shrishti Mishra</h3>
-            <p className="text-xs text-gray-400">MERN Stack Developer</p>
+            <h3 className="font-bold text-base lg:text-lg">Shrishti Mishra</h3>
+            <p className="text-xs lg:text-sm text-gray-400">MERN Stack Developer</p>
           </div>
 
-          <div className="flex justify-center space-x-3 text-purple-400 mb-4 text-xs">
+          <div className="flex justify-center space-x-3 text-purple-400 mb-4 text-xs lg:text-sm">
             <a href="https://github.com/shrishti0212" target="_blank" rel="noopener noreferrer">
               <FaGithub />
             </a>
@@ -92,14 +92,14 @@ const SkillsSection = () => {
             </a>
           </div>
 
-          <div className="space-y-1 text-xs mb-5">
+          <div className="space-y-1 text-xs lg:text-sm mb-5">
             <div><span className="text-purple-300 font-medium">Age:</span> 22</div>
             <div><span className="text-purple-300 font-medium">Freelance:</span> <span className="text-green-400">Available</span></div>
             <div><span className="text-purple-300 font-medium">Address:</span> Howrah, West Bengal</div>
           </div>
 
           <div className="mb-4">
-            <h4 className="text-purple-400 font-semibold mb-1 text-sm">Languages</h4>
+            <h4 className="text-purple-400 font-semibold mb-1 text-sm lg:text-base">Languages</h4>
             <div className="flex flex-wrap gap-1">
               <SkillTag label="Hindi" />
               <SkillTag label="English" />
@@ -107,7 +107,7 @@ const SkillsSection = () => {
           </div>
 
           <div>
-            <h4 className="text-purple-400 font-semibold mb-1 text-sm">Tech Stack</h4>
+            <h4 className="text-purple-400 font-semibold mb-1 text-sm lg:text-base">Tech Stack</h4>
             <div className="flex flex-wrap gap-1">
               <SkillTag label="React" />
               <SkillTag label="Node.js" />
@@ -128,7 +128,7 @@ const SkillsSection = () => {
 };
 
 const SkillTag = ({ label }) => (
-  <span className="px-3 py-0.5 text-xs rounded-full bg-purple-700 text-white hover:bg-purple-600 transition">
+  <span className="px-3 lg:px-4 py-0.5 lg:py-1 text-xs lg:text-sm rounded-full bg-purple-700 text-white hover:bg-purple-600 transition">
     {label}
   </span>
 );
