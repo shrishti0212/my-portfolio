@@ -1,0 +1,21 @@
+{
+  "name": "Shrishti's Portfolio",
+  "short_name": "Portfolio",
+  "description": "Shrishti Mishra's developer portfolio showcasing projects and skills.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6a0dad",
+  "icons": [
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
