@@ -14,7 +14,7 @@ export default defineConfig({
         description: "Shrishti Mishra's developer portfolio showcasing projects and skills.",
         start_url: "/",
         display: "standalone",
-        background_color: "#ffffff",
+        background_color: "#000000",
         theme_color: "#6a0dad",
         icons: [
           {
