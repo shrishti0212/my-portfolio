@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-gray-400 border-t border-white/10 py-6 px-4 mt-16">
+    <footer className="bg-black text-gray-400 border-t border-white/10 py-6 px-4">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
         <p className="text-sm">
           © {new Date().getFullYear()} Shrishti Mishra. All rights reserved.
