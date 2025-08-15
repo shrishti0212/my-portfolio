@@ -33,7 +33,7 @@ const Home = () => {
           </h1>
 
           <p className="mt-4 text-base sm:text-lg text-gray-300 leading-relaxed">
-            I’m a MERN Stack Developer who loves building responsive, dynamic web applications from scratch using MongoDB, Express, React, and Node.
+          I’m a MERN stack web developer and React Native app developer, skilled in building fast, responsive, and scalable applications for web and mobile.
           </p>
 
           <a

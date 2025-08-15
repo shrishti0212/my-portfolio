@@ -77,7 +77,7 @@ const SkillsSection = () => {
               <img src={profile} alt="Shrishti" className="w-full h-full object-cover" />
             </div>
             <h3 className="font-bold text-base lg:text-lg">Shrishti Mishra</h3>
-            <p className="text-xs lg:text-sm text-gray-400">MERN Stack Developer</p>
+            <p className="text-xs lg:text-sm text-gray-400">Full Stack Developer</p>
           </div>
 
           <div className="flex justify-center space-x-3 text-purple-400 mb-4 text-xs lg:text-sm">
