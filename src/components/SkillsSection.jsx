@@ -110,11 +110,15 @@ const SkillsSection = () => {
             <h4 className="text-purple-400 font-semibold mb-1 text-sm lg:text-base">Tech Stack</h4>
             <div className="flex flex-wrap gap-1">
               <SkillTag label="React" />
+              <SkillTag label="React Native" />
+              <SkillTag label="Redux" />
               <SkillTag label="Node.js" />
               <SkillTag label="MongoDB" />
               <SkillTag label="Express.js" />
               <SkillTag label="Tailwind" />
               <SkillTag label="JavaScript" />
+              <SkillTag label="TypeScript" />
+              <SkillTag label="Zustand" />
               <SkillTag label="CSS" />
               <SkillTag label="HTML" />
               <SkillTag label="C++" />

@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="hidden sm:flex fixed top-4 left-1/2 transform -translate-x-1/2 w-[550px] h-[56px] bg-[#211F23]/40 backdrop-blur-md rounded-full z-50 shadow-md items-center justify-center">
+  <nav className="hidden sm:flex fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] sm:w-[550px] md:w-[650px] lg:w-[750px] xl:w-[900px] h-[56px] bg-[#211F23]/40 backdrop-blur-md rounded-full z-50 shadow-md items-center justify-center">
         <ul className="flex space-x-6 font-medium">
           {["home", "skills", "academics", "projects", "contact"].map((item) => (
             <li key={item}>

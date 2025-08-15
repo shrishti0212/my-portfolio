@@ -8,6 +8,13 @@ const projects = [
     demo: "https://solo-sparks-phi.vercel.app",
   },
   {
+    title: "Plantly",
+    description:
+      "Plantly is a cross-platform mobile app for managing plant care schedules with photo-based plant profiles. Built using React Native and Zustand for state management, it features image uploads, watering reminders, and a responsive UI to help plant lovers keep their greens thriving.",
+    image: "/projects/plantly.png",
+    github: "https://github.com/shrishti0212/Plantly",
+  },
+  {
     title: "NomNomNow",
     description:
       "NomNomNow is a responsive food delivery app built with React.js and integrated with the Swiggy public API. Users can browse nearby restaurants, view menus, and add items to a cart with real-time updates and subtotal calculation. The app features dynamic search and filtering, smooth navigation using React Router, and shimmer loading effects for better performance. It highlights clean component structure, React hooks for state management, and effective API integration—making it a solid demonstration of frontend development in action.",
@@ -31,6 +38,7 @@ const projects = [
     github: "https://github.com/shrishti0212/netflix-gpt",
     demo: "https://netflix-gpt-delta-lyart.vercel.app",
   },
+  
 ];
 
 const Projects = () => {
@@ -66,14 +74,16 @@ const Projects = () => {
                 >
                   GitHub
                 </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full sm:w-auto text-center px-4 py-2 bg-white text-black rounded-full text-sm hover:bg-gray-200 transition"
-                >
-                  Live Demo
-                </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto text-center px-4 py-2 bg-white text-black rounded-full text-sm hover:bg-gray-200 transition"
+                  >
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           </div>
